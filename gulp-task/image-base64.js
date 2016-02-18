@@ -17,7 +17,7 @@ module.exports = function (gulp, $) {
       .pipe(through2.obj(function (file, enc, cb) {
         var self = this,
             match,
-            re = /<img is="gwd-image" source="([^"]*?)"[^>]*>/g,
+            re = /<img[^>]*?is="gwd-image" source="([^"]*?)"[^>]*>/g,
             content = file.contents.toString(),
             dirPath = path.dirname(file.path)
         ;

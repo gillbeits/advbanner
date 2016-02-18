@@ -24,5 +24,9 @@
     "run-sequence": "^1.1.5",
     "tmp": "0.0.28",
     "yargs": "^4.1.0"
+  },
+  "devDependencies": {
+    "extend": "^3.0.0",
+    "untildify": "^2.1.0"
   }
 }

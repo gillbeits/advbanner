@@ -34,6 +34,7 @@ module.exports = function (gulp, $) {
       .pipe($.fn(function (file) {
         $.util.log($.util.colors.magenta("Файл " + $.util.colors.green(file.path) + " сохранен"))
       }))
+      .pipe($.fn(gulp._cli._done && typeof gulp._cli._done === 'function' ? gulp._cli._done : $.util.noop))
     ;
   });
 };

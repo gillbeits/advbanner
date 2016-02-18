@@ -42,7 +42,7 @@ module.exports = function (gulp, $) {
         });
         cb();
       }))
-      .pipe(gulp.dest('banners-src/'))
+      .pipe(gulp.dest(gulp._tmp.name))
     ;
   });
 };

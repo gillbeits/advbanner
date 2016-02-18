@@ -23,5 +23,5 @@ require('fs').readdirSync(taskPath).forEach(function (taskFile) {
 });
 
 gulp.task('default', function (cb) {
-  runSequence('clean-all', 'unzip', 'images', 'image-base64', 'compress', cb);
+  runSequence('unzip', 'images', 'image-base64', 'compress', 'clean-tmp', cb);
 });

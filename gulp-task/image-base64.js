@@ -13,7 +13,7 @@ module.exports = function (gulp, $) {
 
   gulp.task('image-base64', function() {
 
-    return gulp.src('banners-src/**/index.html')
+    return gulp.src(gulp._tmp.name + '/**/index.html')
       .pipe(through2.obj(function (file, enc, cb) {
         var self = this,
             match,
@@ -35,8 +35,7 @@ module.exports = function (gulp, $) {
         this.push(file);
         cb();
       }))
-      .pipe($.print())
-      .pipe(gulp.dest('banners-src/'))
+      .pipe(gulp.dest(gulp._tmp.name))
     ;
   });
 };

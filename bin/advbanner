@@ -1,8 +1,6 @@
 #!/usr/bin/env node
 
 "use strict";
-
 process.title = 'advbanner';
 var cli = require('../lib/cli');
-
 cli();

@@ -1,7 +1,7 @@
 {
   "name": "advbanner",
   "version": "1.0.0",
-  "description": "",
+  "description": "Программа для обработки баннеров, созданных в Google Web Designer \nи упаковки каждого в один файл, с целью использования на площадках Avito, Mail.RU и т. п.\n\n",
   "main": "index.js",
   "scripts": {},
   "bin": {
@@ -14,13 +14,15 @@
     "del": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-base64": "^0.1.3",
+    "gulp-fn": "0.0.0",
     "gulp-image": "^1.3.1",
     "gulp-load-plugins": "^1.2.0",
     "gulp-plumber": "^1.1.0",
     "gulp-print": "^2.0.1",
     "gulp-util": "^3.0.7",
     "gulp-zip": "^3.1.0",
-    "nopt": "^3.0.6",
-    "run-sequence": "^1.1.5"
+    "run-sequence": "^1.1.5",
+    "tmp": "0.0.28",
+    "yargs": "^4.1.0"
   }
 }

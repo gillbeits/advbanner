@@ -5,7 +5,7 @@ module.exports = function (gulp, $) {
   "use strict";
 
   gulp.task('images', function() {
-      return gulp.src(['banners-src/**/*.{gif,png,jpeg,jpg,swf}'], { read: true })
+      return gulp.src([gulp._tmp.name + '/**/*.{gif,png,jpeg,jpg,swf}'], { read: true })
         .pipe($.plumber())
         .pipe($.image({
           pngquant: true,
@@ -18,6 +18,6 @@ module.exports = function (gulp, $) {
           gifsicle: true,
           svgo: true
         }))
-        .pipe(gulp.dest('banners-src/'));
+        .pipe(gulp.dest(gulp._tmp.name));
   });
 };
